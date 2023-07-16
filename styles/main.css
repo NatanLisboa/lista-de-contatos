@@ -1,0 +1,45 @@
+body {
+    background-color: aqua;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.lista-de-contatos {
+    width: 50vw;
+}
+
+.lista-de-contatos ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: auto;
+    background-color: white;
+    overflow: auto;
+    min-width: 80%;
+    max-height: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.lista-de-contatos hr {
+    width: 100%;
+    border-left: 0;
+    border-right: 0;
+}
+
+.content h1 {
+    text-align: center;
+}
+
+.lista-de-contatos li {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
