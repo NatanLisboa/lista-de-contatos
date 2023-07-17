@@ -1,6 +1,8 @@
 body {
     background-color: aqua;
     margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .content {
@@ -11,11 +13,11 @@ body {
     min-height: 100vh;
 }
 
-.lista-de-contatos {
+.lista-de-contatos-wrapper {
     width: 50vw;
 }
 
-.lista-de-contatos ul {
+.lista-de-contatos {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -34,7 +36,7 @@ body {
     border-right: 0;
 }
 
-.content h1 {
+.content .titulo {
     text-align: center;
 }
 
@@ -42,4 +44,31 @@ body {
     list-style: none;
     display: flex;
     gap: 20px;
+}
+
+.foto-do-usuario {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 10px;
+    left: 4px;
+}
+
+.titulo, .nome-do-usuario {
+    opacity: 0.8;
+}
+
+.dados-do-usuario {
+    line-height: 0.25;
+}
+
+.nome-do-usuario {
+    opacity: 0.9;
+    font-size: 24px;
+}
+
+.email-do-usuario {
+    font-size: 14px;
+    color: lightgray;
 }
